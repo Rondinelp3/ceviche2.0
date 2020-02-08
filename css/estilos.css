@@ -51,7 +51,7 @@ header .contenedor img{
     margin-left: auto;
     cursor: pointer;  
     position: absolute;
-    right:19px ;
+    right:12px ;
     top: 45px;
     border-radius: 5px;
 
@@ -106,7 +106,7 @@ header ul .menu{
     display: block;
     position: absolute;
     top: 55px;
-    right: 90px;
+    right: 70px;
 }
 
 /*banner*/
