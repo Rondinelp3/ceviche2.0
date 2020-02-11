@@ -345,7 +345,7 @@ header .contenedor img{
     }
     
 }
-@media(min-width:1024px){
+@media(min-width:980px){
     .icon-menu{display: none;
     }
 
@@ -674,8 +674,6 @@ header .contenedor img{
     .menufooterPrin{
         width: 1144px;
         height: 495px;
-       
-        
     }
 
     .submf1{
