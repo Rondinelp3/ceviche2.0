@@ -68,13 +68,13 @@ header .contenedor img{
     position: absolute;
     top: 127px;
     width: 100%;
-    left:-100%;
+    left:-130%;
     z-index: 1;
    
    
 }
 .menu_items{
-    width: 432%;
+    width: 430%;
  
 }
 .menu_link{
@@ -309,7 +309,7 @@ header .contenedor img{
 
 /*--estilos responsiver*/
 
-@media(min-width:780px){
+@media(min-width:680px){
  
     header .contenedor{
     display: block;
@@ -354,7 +354,7 @@ header .contenedor img{
 
 
 
-@media(min-width:1024px){
+@media(min-width:1080px){
     .icon-menu{display: none;
     }
     .nav{
