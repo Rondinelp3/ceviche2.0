@@ -26,7 +26,7 @@ header .contenedor img{
     width: 120px;
     cursor: pointer;
     left: 13px;
-    top:5px
+    top:5px;
    
 }
 
@@ -35,7 +35,7 @@ header .contenedor img{
    color: blue;
     background:white;
     padding: 11px 53px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 /*iconos*/
@@ -70,12 +70,12 @@ header .contenedor img{
     width: 100%;
     left:-100%;
     z-index: 1;
-  
+   
    
 }
-header ul .menu{
-    background: red
-        
+.menu_items{
+    width: 432%;
+ 
 }
 .menu_link{
     display: block;
@@ -84,8 +84,8 @@ header ul .menu{
     color:black;
     text-decoration: none;
     width: 100%;
-    position: relative
-  
+    position: relative;
+    text-align: center;
 }
 
 .menu_link:hover{
@@ -117,7 +117,7 @@ header ul .menu{
 /*main */
 .article{
     position: relative;
-   margin-bottom: 55px;
+    margin-bottom: 55px;
     display: block;
     
   
@@ -125,7 +125,7 @@ header ul .menu{
 }
 .article img, .imagenh1{
     padding-top: 50px;
-    width: 100%
+    width: 100%;
 }
 .main_texto1{
     font-family: 'Dancing Script', cursive;
@@ -140,41 +140,46 @@ header ul .menu{
     line-height:25px;
 
 }
-.main{
-    padding:15px;
-    ;         
-}
+ .main{
+     width: 100%;
+     display: block;
+} 
 /*info*/
 
-  
+.article{
+    padding:15px;
+}
 
 .info_contenido_conten{
     position: relative;
-  margin-bottom: 28px;
+    margin-bottom: 28px;
     background:	#ffe897 ;
     flex-wrap: wrap ;
     display: block;
     text-align: center;
     height: 348px;
-    position: relative;
-    
-
 }
 
 
 .info_contenido img{
-    width: 45%
+    width: 30%;
+    position: relative;
+   
+}
+.section_1 .info_contenido img, .tele_info,.tele_info2{
+    position: relative;
+     bottom: -30px;
+    
 }
 .section_1{
     background: black;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap ;
-    padding: 61px 15px 
+    padding: 60px 15px;
 }
+
 
 .tele_info{
         font-size: 20px;
+    margin-top: 10px;
     
  
 }
@@ -184,25 +189,77 @@ header ul .menu{
 }
 /*arciculo2*/
 .article_segundo{
-    margin-top: 48px;
+    margin-top: -15px;
+    padding:15px;
 }
+
 /*slider*/
 
 .cevi{
-    
     display: block;
     text-align: center;
     font-size: 30px;
-    margin-top: 80px
+    margin-top: 40px;
+    
 }
 
 .img_slider{
- border: 1px solid ;
+ 
     display: block;
     position: relative;
-    height: 100%;
+    height: 100%; 
+
+}
+.img_slider{
+    position: relative;
+   
+}
+.owl-carousel{
+    padding:15px;
+    
+}
+
+.costo{
+    background: #2C2441;
+    border-radius: 5px;
+    width: 45%;      
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    margin: 5px
+
+}
+.puntos{
+    background: #6FADF7;
+    border-radius: 5px;    
+    width: 70%;
+    color: white;
+    position: relative;
+    left: 15%;
+    margin: 5px
  
 }
+.botton{
+    color: black;
+    background: yellow;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px
+    
+}
+.descrip{
+  text-align: center;
+    font-size: 20px;
+    
+}
+.img_link{
+     position: relative;
+    text-align: center;
+    border: 1px solid;
+        
+}
+
 
  /*footer*/
 
@@ -217,27 +274,89 @@ header ul .menu{
 .menufooter{
     display: block;
     margin: 5px;
-     font-size: 22px; 
+    font-size: 25px; 
     color: white;
      
 
 }
  .submenufooter_link {
     color: white;
-    font-size: 15px
+    font-size: 18px;
 }
 
 .foot_img{
     position: relative;
     height: 160px;
     width: 160px;
-    top:7px
+    top:7px;
 }
+ .img_link{
+    margin: 10px;
+    
+    }
+
+.owl-carousel{
+    padding:1% 1%;
+    
+
+    
+    } 
+
+
+
+
+
 
 /*--estilos responsiver*/
-@media(min-width:1280px){
-    .icon-menu{display: none;}
+
+@media(min-width:780px){
+ 
+    header .contenedor{
+    display: block;
+    position: relative;
+    align-items:center ;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    align-items:center ;
+    }
     
+    .btn_menu_2{
+    display: block;
+    position: relative;
+    right: 75px;
+        
+    }
+    .article{
+    display: block;
+    padding: 70px;
+    margin: auto;
+    margin-top: -80px  ;
+    }
+   .article_segundo
+    {
+    display: block;
+    padding: 70px;
+    margin: auto;
+    margin-top: -80px  ;
+    }
+     
+    .section_1{
+    padding: 60px 80px;
+    }
+    .cevi{
+     margin-top: -30px;
+    }
+    
+}
+
+
+
+
+
+@media(min-width:1024px){
+    .icon-menu{display: none;
+    }
     .nav{
         position: static;
         width: auto;
@@ -245,23 +364,24 @@ header ul .menu{
     }
     .nav ul{
         position: absolute;
-        bottom: 15px;
-        right: 120px
+        bottom: 19px;
+        right: 185px;
     }
     .menu{
         position: absolute;
         display: flex;
-         right: 0;
+        right: 0;
     }
     .menu_link{
         background: black;
         color: white;
-        font-size: 20px;
+        font-size: 19px;
     }
+  
     header .contenedor{
         display: block;
         position: relative;
-        align-content: center;;
+        align-content: center;
         width: 60%;
         align-items:center ;
         justify-content: space-between;
@@ -270,35 +390,144 @@ header ul .menu{
     .botones{
         z-index: 100;
         position: absolute;
-        bottom: 25px;
-        right: 330px
+        top: 42px;
+        right: 310px;
       }
     .linkcarrito{
         background:rgba(164, 223, 38, 1);
-        width: 105px;
-        height: 45px;
+        width: 90px;
+        height: 40px;
+        top: -9px;
         text-align: center;
-        line-height: 25px;
-        border-radius: 10px
+        line-height: 12px;
+        border-radius: 10px;
     }
     .lik1{
             top: -15px;
     }
-    .main{
-    padding:490px;
-          padding-top: 0;
-      display:flex
-    ;         
-}
-    .article img, .imagenh1{
-        width: 500px   ;
-       float: left
+    
+    /*main*/
+    .article{
+        padding: 90px 20%;
+        display: flex;
     }
-    .section_1{
-      position: absolute;
-        width: 150px;
-         display:flex
+    .main_texto1,parrafo{
+    position: absolute;  
+     
+    }
+    .parrafo{
+        top: 190px;
+        margin: 30px; 
+    }
+    .parf2{
+        top: 90px;
+    }
+    .main_texto1{
+        width: 25%;
+       
+       
+      }
+    .text_art1{
+        left: 25%;
+        top: 150px;
+
+    }
+    .text_art2{
+    right:25%;
+    top: 2090px;
+    position: absolute;
+        
+    }
+    
+ 
+    .article_segundo{
+    padding: 90px 20%;
+    display: flex;
+      
+
+    }
+    .info_contenido{
+        justify-content: center;
+        display: flex;
+        width: 65%;
+        left:18.5%;
+        position: relative   ;  
+    }
+  
+   .info_contenido_conten{
+    display: inline-block;
+    margin: 10px
+  
+    }
+     .cevi{
+         margin-top: -30px;
+         
+    }
+     .owl-carousel{
+    padding:1% 19.5%;
+ 
+    } 
+    
+    .img_link{
+    margin: 10px;
+    
+    }
+    .img_slider{
+    position: relative;
+    }
+    .costo{
+       width: 20%;
+        left: 40%
+    }
+    .puntos{
+     width: 52%;
+    left: 25%;
+    }
+    .botton{
+         padding: 10px;
+    }
    
+    
+    /*footer*/
+    .footer{
+        display: flex;
+        justify-content: center;
+        height: 500px
+      
+
     }
-    .info_contenido img{
-        width: 50px;
+    .menufooterPrin{
+        width: 1144px;
+        height: 495px;
+       
+        
+    }
+
+    .submf1{
+    position: relative;      
+    text-align: left;
+     width: 20%;
+    }
+    .submf2{
+    position: relative;      
+    text-align: left;
+    left: 290px;
+    top: -155px;
+    width: 20%;
+    }
+    .submf3{
+    position: relative;      
+    text-align: left;
+    left: 575px;
+    top: -255px;
+    width: 20%;
+    height: 200px;
+    }
+    .foot_img{
+    position: relative;
+    left: 470px;
+    top: -430px;
+    height: 200px;
+    width: 200px;         
+     }
+}
