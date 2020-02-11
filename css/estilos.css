@@ -303,13 +303,9 @@ header .contenedor img{
     } 
 
 
-
-
-
-
 /*--estilos responsiver*/
 
-@media(min-width:680px){
+@media(min-width:720px){
  
     header .contenedor{
     display: block;
